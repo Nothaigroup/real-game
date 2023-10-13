@@ -7043,7 +7043,7 @@ script = ExtResource("4_kpapu")
 
 [node name="Marker2D" type="Marker2D" parent="CharacterBody2D/gun"]
 z_as_relative = false
-position = Vector2(28.0816, -6.85718)
+position = Vector2(30.6938, -6.85715)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(465, 2)
