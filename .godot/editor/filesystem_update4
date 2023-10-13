@@ -1,11 +1,7 @@
 res://world.tscn
-<<<<<<< HEAD
-res://bulllet.gd
-res://gdscript/gun.gd
-res://bullet.tscn
-=======
 res://gdscript/CharacterBody2D.gd
 res://main_menu.tscn
 res://main_menu.gd
 res://Options.tscn
->>>>>>> c325d011c9ca9ee1fcac4dfaf12ca158bd201f8d
+res://new_script.gd
+res://PauseMenu.gd
