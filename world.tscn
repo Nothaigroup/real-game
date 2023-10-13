@@ -7040,7 +7040,8 @@ texture = ExtResource("8_ci87x")
 script = ExtResource("4_kpapu")
 
 [node name="Marker2D" type="Marker2D" parent="CharacterBody2D/gun"]
-position = Vector2(29.3877, -7.54288)
+position = Vector2(28.0817, -8.22858)
+gizmo_extents = 0.0
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(465, 2)

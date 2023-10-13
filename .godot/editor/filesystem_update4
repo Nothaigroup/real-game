@@ -1,2 +1,4 @@
 res://world.tscn
-res://gdscript/CharacterBody2D.gd
+res://bulllet.gd
+res://gdscript/gun.gd
+res://bullet.tscn
