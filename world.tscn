@@ -7006,6 +7006,7 @@ animations = [{
 radius = 15.2971
 
 [node name="world" type="Node2D"]
+process_mode = 3
 y_sort_enabled = true
 position = Vector2(-26, 65)
 metadata/_edit_horizontal_guides_ = [438.0]
@@ -7077,3 +7078,26 @@ frame_progress = 0.557076
 [node name="CollisionShape2D" type="CollisionShape2D" parent="enemy"]
 position = Vector2(1211, 480)
 shape = SubResource("CircleShape2D_bqudg")
+
+[node name="PauseMenu" type="Node2D" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="PauseMenu/VBoxContainer"]
+layout_mode = 2
+text = "Save"
+
+[node name="Button2" type="Button" parent="PauseMenu/VBoxContainer"]
+layout_mode = 2
+text = "Exit"

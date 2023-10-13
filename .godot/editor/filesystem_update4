@@ -1,7 +1,17 @@
+<<<<<<< HEAD
+=======
+res://world.tscn
+res://gdscript/CharacterBody2D.gd
+>>>>>>> 5c60fd0381f514c03cd9c59464f8fd4a77c9309c
 res://main_menu.tscn
 res://gdscript/gun.gd
 res://world.tscn
 res://Options.tscn
+<<<<<<< HEAD
 res://bullet.tscn
 res://bulllet.gd
 res://gdscript/CharacterBody2D.gd
+=======
+res://new_script.gd
+res://PauseMenu.gd
+>>>>>>> 5c60fd0381f514c03cd9c59464f8fd4a77c9309c
