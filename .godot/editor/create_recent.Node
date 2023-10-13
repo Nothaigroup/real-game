@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 VisibleOnScreenNotifier2D
 AnimatedSprite2D
-CollisionShape2D
+=======
 Sprite2D
+Label
+Control
+Button
+VBoxContainer
+MarginContainer
+Marker2D
+>>>>>>> c325d011c9ca9ee1fcac4dfaf12ca158bd201f8d
+CollisionShape2D
 Area2D
 CharacterBody2D
 Marker2D

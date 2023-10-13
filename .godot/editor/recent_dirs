@@ -1,6 +1,9 @@
 res://
+<<<<<<< HEAD
 res://bullet
 res://gun
+=======
+>>>>>>> c325d011c9ca9ee1fcac4dfaf12ca158bd201f8d
 res://gdscript
 res://Ghost and Skull sprites
 res://player
