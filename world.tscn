@@ -7035,14 +7035,14 @@ shape = SubResource("CapsuleShape2D_0o3r2")
 
 [node name="gun" type="Sprite2D" parent="CharacterBody2D"]
 top_level = true
-position = Vector2(995, 429)
+position = Vector2(976, 494)
 scale = Vector2(1.53125, 1.45833)
 texture = ExtResource("8_ci87x")
 script = ExtResource("4_kpapu")
 
 [node name="Marker2D" type="Marker2D" parent="CharacterBody2D/gun"]
-position = Vector2(28.0817, -8.22858)
-gizmo_extents = 0.0
+z_as_relative = false
+position = Vector2(28.0816, -6.85718)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(465, 2)
