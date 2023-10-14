@@ -1,14 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697222727
-bullet.tscn::PackedScene::7296696766614781536::1697221775::0::1::::<><>::res://bulllet.gd<>uid://cti1dycxi5xfy::::res://bullet/All_Fire_Bullet_Pixel_16x16_00.png
+::res://::1697260966
+bullet.tscn::PackedScene::7296696766614781536::1697222843::0::1::::<><>::res://bulllet.gd<>uid://cti1dycxi5xfy::::res://bullet/All_Fire_Bullet_Pixel_16x16_00.png
 bulllet.gd::GDScript::-1::1697221094::0::1::::<>Area2D<>::
 main_menu.gd::GDScript::-1::1697219113::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::7281320251602400620::1697221773::0::1::::<><>::res://main_menu.gd
+main_menu.tscn::PackedScene::7281320251602400620::1697222842::0::1::::<><>::res://main_menu.gd
 new_script.gd::GDScript::-1::1697222479::0::1::::<>RefCounted<>::
-Options.tscn::PackedScene::4430703215181226011::1697221775::0::1::::<><>::uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png
+Options.tscn::PackedScene::4430703215181226011::1697222843::0::1::::<><>::uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png
 PauseMenu.gd::GDScript::-1::1697222479::0::1::::<>Node2D<>::
 world.gd::GDScript::-1::1697222479::0::1::::<>Node2D<>::
-world.tscn::PackedScene::7623876761369753267::1697222479::0::1::::<><>::uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png<>res://gdscript/CharacterBody2D.gd<>uid://ctu3ya5aq82n8::::res://sch/sch_inside.png<>res://gdscript/gun.gd<>uid://bw1n1sravd3jw::::res://sch/sch_wall.png<>uid://bdihcgl6lupnv::::res://sch/sch_D.png<>uid://bl0sm65bnmi5r::::res://sch/sch_A5.png<>uid://das7qxtxqtkye::::res://Ghost and Skull sprites/skullSpritesheet.png<>uid://bayu72gju36xr::::res://gun/StG 44.png
+world.tscn::PackedScene::7623876761369753267::1697222843::0::1::::<><>::uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png<>res://gdscript/CharacterBody2D.gd<>uid://ctu3ya5aq82n8::::res://sch/sch_inside.png<>res://gdscript/gun.gd<>uid://bw1n1sravd3jw::::res://sch/sch_wall.png<>uid://bdihcgl6lupnv::::res://sch/sch_D.png<>uid://bl0sm65bnmi5r::::res://sch/sch_A5.png<>uid://das7qxtxqtkye::::res://Ghost and Skull sprites/skullSpritesheet.png<>uid://bayu72gju36xr::::res://gun/StG 44.png
 ::res://bullet/::1697212862
 All_Fire_Bullet_Pixel_16x16_00.png::CompressedTexture2D::6124529682441861998::1697212862::1697212862::1::::<><>::
 All_Fire_Bullet_Pixel_16x16_01.png::CompressedTexture2D::8083140385709473270::1697212862::1697212862::1::::<><>::
