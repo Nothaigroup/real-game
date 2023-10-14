@@ -135,7 +135,7 @@ position = Vector2(0.5, -5)
 shape = SubResource("RectangleShape2D_nuk6n")
 
 [node name="hpbar" type="ProgressBar" parent="."]
-modulate = Color(0.776471, 0.905882, 0.2, 1)
+modulate = Color(0.980392, 0.239216, 0.627451, 1)
 clip_contents = true
 offset_left = -34.0
 offset_top = -67.0
