@@ -1,69 +1,69 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697278979
-main_menu.gd::GDScript::-1::1697275037::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::7281320251602400620::1697278744::0::1::::<><>::res://main_menu.gd
-new_script.gd::GDScript::-1::1697222479::0::1::::<>RefCounted<>::
-Options.tscn::PackedScene::4430703215181226011::1697278744::0::1::::<><>::uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png
-PauseMenu.gd::GDScript::-1::1697222479::0::1::::<>Node2D<>::
-player.tscn::PackedScene::4429663092342541966::1697278745::0::1::::<><>::res://gdscript/player.gd<>uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png<>uid://bayu72gju36xr::::res://gun/StG 44.png<>res://gdscript/gun.gd
-spawn_info.gd::GDScript::-1::1697278414::0::1::::Spawn_info<>Resource<>::
-world.gd::GDScript::-1::1697222479::0::1::::<>Node2D<>::
-world.tscn::PackedScene::7623876761369753267::1697278971::0::1::::<><>::uid://b4d05y72uj263::::res://player.tscn<>uid://ctu3ya5aq82n8::::res://sch/sch_inside.png<>uid://bw1n1sravd3jw::::res://sch/sch_wall.png<>uid://bdihcgl6lupnv::::res://sch/sch_D.png<>uid://bl0sm65bnmi5r::::res://sch/sch_A5.png<>uid://syopmrhye317::::res://gdscript/enemy.tscn<>uid://coqobedpio2dh::::res://gdscript/enemyspawner.tscn
-::res://bullet/::1697212862
-All_Fire_Bullet_Pixel_16x16_00.png::CompressedTexture2D::6124529682441861998::1697212862::1697212862::1::::<><>::
-All_Fire_Bullet_Pixel_16x16_01.png::CompressedTexture2D::8083140385709473270::1697212862::1697212862::1::::<><>::
-All_Fire_Bullet_Pixel_16x16_02.png::CompressedTexture2D::6653023046731341153::1697212862::1697212862::1::::<><>::
-All_Fire_Bullet_Pixel_16x16_03.png::CompressedTexture2D::3726492162832167986::1697212862::1697212862::1::::<><>::
-All_Fire_Bullet_Pixel_16x16_04.png::CompressedTexture2D::6825153549653705564::1697212862::1697212862::1::::<><>::
-All_Fire_Bullet_Pixel_16x16_05.png::CompressedTexture2D::4917073634316678745::1697212862::1697212862::1::::<><>::
-All_Fire_Bullet_Pixel_16x16_06.png::CompressedTexture2D::6663972644723371281::1697212862::1697212862::1::::<><>::
-All_Fire_Bullet_Pixel_16x16_07.png::CompressedTexture2D::7443064691919575992::1697212862::1697212862::1::::<><>::
-KoCuxN.png::CompressedTexture2D::7603736435750128537::1697212453::1697212852::1::::<><>::
-::res://gdscript/::1697278947
-bullet.tscn::PackedScene::7296696766614781536::1697278744::0::1::::<><>::res://gdscript/bulllet.gd<>uid://cti1dycxi5xfy::::res://bullet/All_Fire_Bullet_Pixel_16x16_00.png
-bulllet.gd::GDScript::-1::1697221094::0::1::::<>Area2D<>::
-enemy.gd::GDScript::-1::1697275747::0::1::::<>CharacterBody2D<>::
-enemy.tscn::PackedScene::1313821733281508804::1697278745::0::1::::<><>::uid://das7qxtxqtkye::::res://Ghost and Skull sprites/skullSpritesheet.png<>res://gdscript/enemy.gd
-enemyspawner.gd::GDScript::-1::1697278744::0::1::::<>Node2D<>::
-enemyspawner.tscn::PackedScene::5789367261496864745::1697278744::0::1::::<><>::res://gdscript/enemyspawner.gd<>uid://syopmrhye317::::res://gdscript/enemy.tscn<>res://spawn_info.gd
-gun.gd::GDScript::-1::1697273578::0::1::::<>Sprite2D<>::
-player.gd::GDScript::-1::1697273166::0::1::::<>CharacterBody2D<>::
-::res://Ghost and Skull sprites/::1697187986
-ghostSpritesheetfull.png::CompressedTexture2D::4583710233005352679::1697187979::1697187986::1::::<><>::
-ReadMe.txt::TextFile::-1::1697187979::0::1::::<><>::
-skullSpritesheet.png::CompressedTexture2D::7198393605578876820::1697187979::1697187986::1::::<><>::
-::res://gun/::1697212851
-BAR.png::CompressedTexture2D::2886293724838040737::1697189390::1697189391::1::::<><>::
-Bazooka.png::CompressedTexture2D::9077192870561357328::1697189390::1697189391::1::::<><>::
-Bren LMG.png::CompressedTexture2D::3381514366552280090::1697189390::1697189391::1::::<><>::
-Colt M1911.png::CompressedTexture2D::644862476948165211::1697189390::1697189391::1::::<><>::
-DP 28.png::CompressedTexture2D::2071456876012230324::1697189390::1697189391::1::::<><>::
-Enfield No. 2.png::CompressedTexture2D::4207281536830636395::1697189390::1697189391::1::::<><>::
-Gewehr 43.png::CompressedTexture2D::1095538429267260042::1697189390::1697189391::1::::<><>::
-Karabiner 98k.png::CompressedTexture2D::4084535662668417646::1697189390::1697189391::1::::<><>::
-M1 Garand.png::CompressedTexture2D::8157126713205028264::1697189390::1697189391::1::::<><>::
-MG 42.png::CompressedTexture2D::3630426613765142492::1697189390::1697189391::1::::<><>::
-Mk 2 grenade.png::CompressedTexture2D::3363069467092348473::1697189390::1697189391::1::::<><>::
-Mosin Nagant.png::CompressedTexture2D::4300761097759172388::1697189390::1697189391::1::::<><>::
-MP 40.png::CompressedTexture2D::3153275314210599640::1697189390::1697189391::1::::<><>::
-Panzerschreck.png::CompressedTexture2D::7522820767577870165::1697189390::1697189391::1::::<><>::
-PPSh 41.png::CompressedTexture2D::4779891008374903463::1697189390::1697189391::1::::<><>::
-Springfield M1903.png::CompressedTexture2D::5566305947367554281::1697189390::1697189391::1::::<><>::
-Sten.png::CompressedTexture2D::3410368703008774669::1697189390::1697189391::1::::<><>::
-StG 44.png::CompressedTexture2D::2437238662886884699::1697189390::1697189391::1::::<><>::
-Stick grenade.png::CompressedTexture2D::768408689191205874::1697189390::1697189391::1::::<><>::
-SVT-40.png::CompressedTexture2D::4905331208847620254::1697189390::1697189391::1::::<><>::
-Thompson.png::CompressedTexture2D::1882689241980934580::1697189390::1697189391::1::::<><>::
-Tokarev TT-33.png::CompressedTexture2D::7519586517875351257::1697189390::1697189391::1::::<><>::
-Type 97 grenade.png::CompressedTexture2D::5209807685116139122::1697189390::1697189391::1::::<><>::
-Type 99 Arisaka.png::CompressedTexture2D::587501017995818113::1697189390::1697189391::1::::<><>::
-Type 99 LMG.png::CompressedTexture2D::8695611797660577364::1697189390::1697189391::1::::<><>::
-Walther P38.png::CompressedTexture2D::459972113301552512::1697189390::1697189391::1::::<><>::
-::res://player/::1697190745
-387589420_854933625959966_2668475148856670804_n.png::CompressedTexture2D::1988096173639297042::1697125593::1697125599::1::::<><>::
-::res://sch/::1697187986
-sch_A5.png::CompressedTexture2D::3211223417590883453::1697134690::1697134690::1::::<><>::
-sch_D.png::CompressedTexture2D::2613931160733802619::1697134690::1697134690::1::::<><>::
-sch_inside.png::CompressedTexture2D::6149459932808033999::1697134690::1697134690::1::::<><>::
-sch_wall.png::CompressedTexture2D::3985085788593050336::1697134690::1697134690::1::::<><>::
-Terms.txt::TextFile::-1::1697134690::0::1::::<><>::
+::res://::1697292327
+main_menu.gd::GDScript::-1::1697292097::0::1::::<>Control<>::
+main_menu.tscn::PackedScene::7281320251602400620::1697292097::0::1::::<><>::res://main_menu.gd
+new_script.gd::GDScript::-1::1697292097::0::1::::<>RefCounted<>::
+Options.tscn::PackedScene::4430703215181226011::1697292097::0::1::::<><>::uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png
+PauseMenu.gd::GDScript::-1::1697292097::0::1::::<>Node2D<>::
+player.tscn::PackedScene::4429663092342541966::1697292223::0::1::::<><>::res://gdscript/player.gd<>uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png<>uid://bayu72gju36xr::::res://gun/StG 44.png<>res://gdscript/gun.gd
+spawn_info.gd::GDScript::-1::1697292223::0::1::::Spawn_info<>Resource<>::
+world.gd::GDScript::-1::1697292097::0::1::::<>Node2D<>::
+world.tscn::PackedScene::7623876761369753267::1697292223::0::1::::<><>::uid://b4d05y72uj263::::res://player.tscn<>uid://ctu3ya5aq82n8::::res://sch/sch_inside.png<>uid://bw1n1sravd3jw::::res://sch/sch_wall.png<>uid://bdihcgl6lupnv::::res://sch/sch_D.png<>uid://bl0sm65bnmi5r::::res://sch/sch_A5.png<>uid://syopmrhye317::::res://gdscript/enemy.tscn<>uid://coqobedpio2dh::::res://gdscript/enemyspawner.tscn
+::res://bullet/::1697292097
+All_Fire_Bullet_Pixel_16x16_00.png::CompressedTexture2D::6124529682441861998::1697292097::1697292097::1::::<><>::
+All_Fire_Bullet_Pixel_16x16_01.png::CompressedTexture2D::8083140385709473270::1697292097::1697292097::1::::<><>::
+All_Fire_Bullet_Pixel_16x16_02.png::CompressedTexture2D::6653023046731341153::1697292097::1697292097::1::::<><>::
+All_Fire_Bullet_Pixel_16x16_03.png::CompressedTexture2D::3726492162832167986::1697292097::1697292097::1::::<><>::
+All_Fire_Bullet_Pixel_16x16_04.png::CompressedTexture2D::6825153549653705564::1697292097::1697292097::1::::<><>::
+All_Fire_Bullet_Pixel_16x16_05.png::CompressedTexture2D::4917073634316678745::1697292097::1697292097::1::::<><>::
+All_Fire_Bullet_Pixel_16x16_06.png::CompressedTexture2D::6663972644723371281::1697292097::1697292097::1::::<><>::
+All_Fire_Bullet_Pixel_16x16_07.png::CompressedTexture2D::7443064691919575992::1697292097::1697292097::1::::<><>::
+KoCuxN.png::CompressedTexture2D::7603736435750128537::1697292097::1697292097::1::::<><>::
+::res://gdscript/::1697292223
+bullet.tscn::PackedScene::7296696766614781536::1697292223::0::1::::<><>::res://gdscript/bulllet.gd<>uid://cti1dycxi5xfy::::res://bullet/All_Fire_Bullet_Pixel_16x16_00.png
+bulllet.gd::GDScript::-1::1697292223::0::1::::<>Area2D<>::
+enemy.gd::GDScript::-1::1697292223::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::1313821733281508804::1697292223::0::1::::<><>::uid://das7qxtxqtkye::::res://Ghost and Skull sprites/skullSpritesheet.png<>res://gdscript/enemy.gd
+enemyspawner.gd::GDScript::-1::1697292223::0::1::::<>Node2D<>::
+enemyspawner.tscn::PackedScene::5789367261496864745::1697292223::0::1::::<><>::res://gdscript/enemyspawner.gd<>uid://syopmrhye317::::res://gdscript/enemy.tscn<>res://spawn_info.gd
+gun.gd::GDScript::-1::1697292223::0::1::::<>Sprite2D<>::
+player.gd::GDScript::-1::1697292223::0::1::::<>CharacterBody2D<>::
+::res://Ghost and Skull sprites/::1697207427
+ghostSpritesheetfull.png::CompressedTexture2D::4583710233005352679::1697207427::1697207427::1::::<><>::
+ReadMe.txt::TextFile::-1::1697207427::0::1::::<><>::
+skullSpritesheet.png::CompressedTexture2D::7198393605578876820::1697207427::1697207427::1::::<><>::
+::res://gun/::1697292097
+BAR.png::CompressedTexture2D::2886293724838040737::1697207427::1697207427::1::::<><>::
+Bazooka.png::CompressedTexture2D::9077192870561357328::1697207427::1697207427::1::::<><>::
+Bren LMG.png::CompressedTexture2D::3381514366552280090::1697207427::1697207427::1::::<><>::
+Colt M1911.png::CompressedTexture2D::644862476948165211::1697207427::1697207427::1::::<><>::
+DP 28.png::CompressedTexture2D::2071456876012230324::1697207427::1697207427::1::::<><>::
+Enfield No. 2.png::CompressedTexture2D::4207281536830636395::1697207427::1697207427::1::::<><>::
+Gewehr 43.png::CompressedTexture2D::1095538429267260042::1697207427::1697207427::1::::<><>::
+Karabiner 98k.png::CompressedTexture2D::4084535662668417646::1697207427::1697207427::1::::<><>::
+M1 Garand.png::CompressedTexture2D::8157126713205028264::1697207427::1697207427::1::::<><>::
+MG 42.png::CompressedTexture2D::3630426613765142492::1697207427::1697207427::1::::<><>::
+Mk 2 grenade.png::CompressedTexture2D::3363069467092348473::1697207427::1697207427::1::::<><>::
+Mosin Nagant.png::CompressedTexture2D::4300761097759172388::1697207427::1697207427::1::::<><>::
+MP 40.png::CompressedTexture2D::3153275314210599640::1697207427::1697207427::1::::<><>::
+Panzerschreck.png::CompressedTexture2D::7522820767577870165::1697207427::1697207427::1::::<><>::
+PPSh 41.png::CompressedTexture2D::4779891008374903463::1697207427::1697207427::1::::<><>::
+Springfield M1903.png::CompressedTexture2D::5566305947367554281::1697207427::1697207427::1::::<><>::
+Sten.png::CompressedTexture2D::3410368703008774669::1697207427::1697207427::1::::<><>::
+StG 44.png::CompressedTexture2D::2437238662886884699::1697207427::1697207427::1::::<><>::
+Stick grenade.png::CompressedTexture2D::768408689191205874::1697207427::1697207427::1::::<><>::
+SVT-40.png::CompressedTexture2D::4905331208847620254::1697207427::1697207427::1::::<><>::
+Thompson.png::CompressedTexture2D::1882689241980934580::1697207427::1697207427::1::::<><>::
+Tokarev TT-33.png::CompressedTexture2D::7519586517875351257::1697207427::1697207427::1::::<><>::
+Type 97 grenade.png::CompressedTexture2D::5209807685116139122::1697207427::1697207427::1::::<><>::
+Type 99 Arisaka.png::CompressedTexture2D::587501017995818113::1697207427::1697207427::1::::<><>::
+Type 99 LMG.png::CompressedTexture2D::8695611797660577364::1697207427::1697207427::1::::<><>::
+Walther P38.png::CompressedTexture2D::459972113301552512::1697207427::1697207427::1::::<><>::
+::res://player/::1697207427
+387589420_854933625959966_2668475148856670804_n.png::CompressedTexture2D::1988096173639297042::1697207427::1697207427::1::::<><>::
+::res://sch/::1697285147
+sch_A5.png::CompressedTexture2D::3211223417590883453::1697207427::1697207427::1::::<><>::
+sch_D.png::CompressedTexture2D::2613931160733802619::1697207427::1697207427::1::::<><>::
+sch_inside.png::CompressedTexture2D::6149459932808033999::1697207427::1697207428::1::::<><>::
+sch_wall.png::CompressedTexture2D::3985085788593050336::1697207428::1697207428::1::::<><>::
+Terms.txt::TextFile::-1::1697207427::0::1::::<><>::
