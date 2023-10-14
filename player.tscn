@@ -97,9 +97,8 @@ _data = {
 "walkUp": SubResource("Animation_021dk")
 }
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0o3r2"]
-radius = 23.0
-height = 94.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nuk6n"]
+size = Vector2(33, 76)
 
 [node name="player" type="CharacterBody2D" groups=["huh"]]
 position = Vector2(993, 417)
@@ -120,17 +119,35 @@ libraries = {
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_enabled = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -4)
-shape = SubResource("CapsuleShape2D_0o3r2")
-
 [node name="gun" type="Sprite2D" parent="."]
 top_level = true
-position = Vector2(976, 494)
-scale = Vector2(1.53125, 1.45833)
 texture = ExtResource("3_ok2b2")
 script = ExtResource("4_yq6s2")
 
 [node name="Marker2D" type="Marker2D" parent="gun"]
 z_as_relative = false
 position = Vector2(30.6938, -6.85715)
+
+[node name="player_hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_hitbox"]
+position = Vector2(0.5, -5)
+shape = SubResource("RectangleShape2D_nuk6n")
+
+[node name="hpbar" type="ProgressBar" parent="."]
+modulate = Color(0.776471, 0.905882, 0.2, 1)
+clip_contents = true
+offset_left = -34.0
+offset_top = -67.0
+offset_right = 33.0
+offset_bottom = -56.0
+max_value = 10.0
+value = 10.0
+show_percentage = false
+
+[node name="atk_cd" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="body_entered" from="player_hitbox" to="." method="_on_player_hitbox_body_entered"]
+[connection signal="body_exited" from="player_hitbox" to="." method="_on_player_hitbox_body_exited"]
+[connection signal="timeout" from="atk_cd" to="." method="_on_atk_cd_timeout"]

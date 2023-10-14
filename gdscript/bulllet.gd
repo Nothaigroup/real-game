@@ -12,10 +12,15 @@ func _physics_process(_delta):
 	set_physics_process(false)
 	
 	
-	
-func is_on_screen():
+
+func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()
-	
-	
-func _on_bullet_body_entered(_body):
+
+
+
+
+
+
+
+func _on_body_entered(_body):
 	queue_free()

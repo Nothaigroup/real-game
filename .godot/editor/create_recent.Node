@@ -1,7 +1,8 @@
-Node2D
+ProgressBar
+Timer
 CollisionShape2D
 Area2D
-Timer
+Node2D
 Button
 VBoxContainer
 VisibleOnScreenNotifier2D

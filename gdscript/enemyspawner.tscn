@@ -9,7 +9,7 @@ script = ExtResource("3_83sek")
 time_start = 0
 time_end = 60
 enemy = ExtResource("2_6kfb5")
-enemy_num = 1
+enemy_num = 3
 enemyspawn_delay = 1
 
 [node name="enemyspawner" type="Node2D"]
