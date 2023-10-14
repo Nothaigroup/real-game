@@ -1,7 +1,7 @@
 extends Sprite2D
 
 var can_fire = true
-var bullet = preload('res://bullet.tscn')
+var bullet = preload('res://gdscript/bullet.tscn')
 
 func _ready(): set_as_top_level(true)
 

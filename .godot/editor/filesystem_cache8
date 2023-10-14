@@ -1,14 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697260966
-bullet.tscn::PackedScene::7296696766614781536::1697222843::0::1::::<><>::res://bulllet.gd<>uid://cti1dycxi5xfy::::res://bullet/All_Fire_Bullet_Pixel_16x16_00.png
-bulllet.gd::GDScript::-1::1697221094::0::1::::<>Area2D<>::
-main_menu.gd::GDScript::-1::1697219113::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::7281320251602400620::1697222842::0::1::::<><>::res://main_menu.gd
+::res://::1697278979
+main_menu.gd::GDScript::-1::1697275037::0::1::::<>Control<>::
+main_menu.tscn::PackedScene::7281320251602400620::1697278744::0::1::::<><>::res://main_menu.gd
 new_script.gd::GDScript::-1::1697222479::0::1::::<>RefCounted<>::
-Options.tscn::PackedScene::4430703215181226011::1697222843::0::1::::<><>::uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png
+Options.tscn::PackedScene::4430703215181226011::1697278744::0::1::::<><>::uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png
 PauseMenu.gd::GDScript::-1::1697222479::0::1::::<>Node2D<>::
+player.tscn::PackedScene::4429663092342541966::1697278745::0::1::::<><>::res://gdscript/player.gd<>uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png<>uid://bayu72gju36xr::::res://gun/StG 44.png<>res://gdscript/gun.gd
+spawn_info.gd::GDScript::-1::1697278414::0::1::::Spawn_info<>Resource<>::
 world.gd::GDScript::-1::1697222479::0::1::::<>Node2D<>::
-world.tscn::PackedScene::7623876761369753267::1697222843::0::1::::<><>::uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png<>res://gdscript/CharacterBody2D.gd<>uid://ctu3ya5aq82n8::::res://sch/sch_inside.png<>res://gdscript/gun.gd<>uid://bw1n1sravd3jw::::res://sch/sch_wall.png<>uid://bdihcgl6lupnv::::res://sch/sch_D.png<>uid://bl0sm65bnmi5r::::res://sch/sch_A5.png<>uid://das7qxtxqtkye::::res://Ghost and Skull sprites/skullSpritesheet.png<>uid://bayu72gju36xr::::res://gun/StG 44.png
+world.tscn::PackedScene::7623876761369753267::1697278971::0::1::::<><>::uid://b4d05y72uj263::::res://player.tscn<>uid://ctu3ya5aq82n8::::res://sch/sch_inside.png<>uid://bw1n1sravd3jw::::res://sch/sch_wall.png<>uid://bdihcgl6lupnv::::res://sch/sch_D.png<>uid://bl0sm65bnmi5r::::res://sch/sch_A5.png<>uid://syopmrhye317::::res://gdscript/enemy.tscn<>uid://coqobedpio2dh::::res://gdscript/enemyspawner.tscn
 ::res://bullet/::1697212862
 All_Fire_Bullet_Pixel_16x16_00.png::CompressedTexture2D::6124529682441861998::1697212862::1697212862::1::::<><>::
 All_Fire_Bullet_Pixel_16x16_01.png::CompressedTexture2D::8083140385709473270::1697212862::1697212862::1::::<><>::
@@ -19,9 +19,15 @@ All_Fire_Bullet_Pixel_16x16_05.png::CompressedTexture2D::4917073634316678745::16
 All_Fire_Bullet_Pixel_16x16_06.png::CompressedTexture2D::6663972644723371281::1697212862::1697212862::1::::<><>::
 All_Fire_Bullet_Pixel_16x16_07.png::CompressedTexture2D::7443064691919575992::1697212862::1697212862::1::::<><>::
 KoCuxN.png::CompressedTexture2D::7603736435750128537::1697212453::1697212852::1::::<><>::
-::res://gdscript/::1697221235
-CharacterBody2D.gd::GDScript::-1::1697220674::0::1::::<>CharacterBody2D<>::
-gun.gd::GDScript::-1::1697221235::0::1::::<>Sprite2D<>::
+::res://gdscript/::1697278947
+bullet.tscn::PackedScene::7296696766614781536::1697278744::0::1::::<><>::res://gdscript/bulllet.gd<>uid://cti1dycxi5xfy::::res://bullet/All_Fire_Bullet_Pixel_16x16_00.png
+bulllet.gd::GDScript::-1::1697221094::0::1::::<>Area2D<>::
+enemy.gd::GDScript::-1::1697275747::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::1313821733281508804::1697278745::0::1::::<><>::uid://das7qxtxqtkye::::res://Ghost and Skull sprites/skullSpritesheet.png<>res://gdscript/enemy.gd
+enemyspawner.gd::GDScript::-1::1697278744::0::1::::<>Node2D<>::
+enemyspawner.tscn::PackedScene::5789367261496864745::1697278744::0::1::::<><>::res://gdscript/enemyspawner.gd<>uid://syopmrhye317::::res://gdscript/enemy.tscn<>res://spawn_info.gd
+gun.gd::GDScript::-1::1697273578::0::1::::<>Sprite2D<>::
+player.gd::GDScript::-1::1697273166::0::1::::<>CharacterBody2D<>::
 ::res://Ghost and Skull sprites/::1697187986
 ghostSpritesheetfull.png::CompressedTexture2D::4583710233005352679::1697187979::1697187986::1::::<><>::
 ReadMe.txt::TextFile::-1::1697187979::0::1::::<><>::
