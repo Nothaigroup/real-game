@@ -1,0 +1,136 @@
+[gd_scene load_steps=12 format=3 uid="uid://b4d05y72uj263"]
+
+[ext_resource type="Script" path="res://gdscript/player.gd" id="1_rmsn2"]
+[ext_resource type="Texture2D" uid="uid://3lbwhp1dfm1w" path="res://player/387589420_854933625959966_2668475148856670804_n.png" id="2_708pa"]
+[ext_resource type="Texture2D" uid="uid://bayu72gju36xr" path="res://gun/StG 44.png" id="3_ok2b2"]
+[ext_resource type="Script" path="res://gdscript/gun.gd" id="4_yq6s2"]
+
+[sub_resource type="Animation" id="Animation_hov86"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_nrjih"]
+resource_name = "walkDown"
+loop_mode = 1
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_bo1am"]
+resource_name = "walkLeft"
+loop_mode = 1
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11]
+}
+
+[sub_resource type="Animation" id="Animation_0preg"]
+resource_name = "walkRight"
+loop_mode = 1
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_021dk"]
+resource_name = "walkUp"
+loop_mode = 1
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [12, 13, 14, 15]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bvnnb"]
+_data = {
+"RESET": SubResource("Animation_hov86"),
+"walkDown": SubResource("Animation_nrjih"),
+"walkLeft": SubResource("Animation_bo1am"),
+"walkRight": SubResource("Animation_0preg"),
+"walkUp": SubResource("Animation_021dk")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0o3r2"]
+radius = 23.0
+height = 94.0
+
+[node name="player" type="CharacterBody2D" groups=["huh"]]
+position = Vector2(993, 417)
+script = ExtResource("1_rmsn2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["lel"]]
+position = Vector2(-2, 7)
+texture = ExtResource("2_708pa")
+hframes = 6
+vframes = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Sprite2D")
+libraries = {
+"": SubResource("AnimationLibrary_bvnnb")
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("CapsuleShape2D_0o3r2")
+
+[node name="gun" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(976, 494)
+scale = Vector2(1.53125, 1.45833)
+texture = ExtResource("3_ok2b2")
+script = ExtResource("4_yq6s2")
+
+[node name="Marker2D" type="Marker2D" parent="gun"]
+z_as_relative = false
+position = Vector2(30.6938, -6.85715)
