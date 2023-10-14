@@ -56,7 +56,7 @@ script = ExtResource("1_82asa")
 sprite_frames = SubResource("SpriteFrames_2an5d")
 frame_progress = 0.579165
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="bullet_hitbox" type="CollisionShape2D" parent="." groups=["bullet"]]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_qs1lr")
 

@@ -11,10 +11,9 @@ var weapondmg = 0
 
 func _physics_process(_delta):
 	var directionn = global_position.direction_to(playerr.global_position)
-	velocity = directionn*movement_speed
+	velocity = directionn * movement_speed
 	move_and_slide()
 	update_hpbar()
-	
 	
 func damage():
 	if cantakedmg:
@@ -29,10 +28,7 @@ func damage():
 			
 
 
-func _on_area_2d_area_entered(_area):
-	weaponname = 'ak'
-	weapondmg = 1
-	damage()
+
 
 func update_hpbar():
 	var hpbar = $hp_bar
@@ -47,3 +43,10 @@ func update_hpbar():
 	
 func enemy():
 	pass
+
+
+func _on_enemy_hitbox_area_entered(_area):
+	if _area is bullet :
+		weaponname = 'ak'
+		weapondmg = 1
+		damage()
