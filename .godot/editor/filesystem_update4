@@ -1,8 +1,2 @@
-res://main_menu.tscn
-res://world.tscn
-res://Options.tscn
-res://gdscript/bullet.tscn
-res://gdscript/enemyspawner.tscn
-res://gdscript/enemy.tscn
 res://player.tscn
 res://gdscript/player.gd
