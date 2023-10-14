@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://df8i763sapxen"]
+
+[ext_resource type="Script" path="res://gdscript/enemy.gd" id="1_ey0sl"]
+[ext_resource type="Texture2D" uid="uid://b6knbj0vgjdgh" path="res://Ghost and Skull sprites/ghostSpritesheetfull.png" id="2_5ivu1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5820"]
+atlas = ExtResource("2_5ivu1")
+region = Rect2(52, 0, 52, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5nfh4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5820")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bqudg"]
+radius = 15.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wwjqg"]
+size = Vector2(40, 32)
+
+[node name="enemy" type="CharacterBody2D"]
+top_level = true
+script = ExtResource("1_ey0sl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5nfh4")
+frame_progress = 0.557076
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_bqudg")
+
+[node name="enemy_hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_hitbox"]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_wwjqg")
+
+[node name="hp_bar" type="ProgressBar" parent="."]
+modulate = Color(0, 0.905882, 0.431373, 1)
+clip_contents = true
+offset_left = -19.0
+offset_top = 25.0
+offset_right = 21.0
+offset_bottom = 33.0
+max_value = 5.0
+value = 5.0
+show_percentage = false
+
+[connection signal="area_entered" from="enemy_hitbox" to="." method="_on_enemy_hitbox_area_entered"]

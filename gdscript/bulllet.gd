@@ -1,7 +1,7 @@
 extends Area2D
 class_name bullet
 
-@export var speed = 2000
+@export var speed = 3000
 
 func _ready(): set_as_top_level(true)
 
