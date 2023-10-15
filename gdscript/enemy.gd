@@ -6,7 +6,7 @@ var alivee  = true
 var cantakedmg = true
 var weaponname = ''
 var weapondmg = 0
-var hp = 5
+var hp = globalvar.hpp+globalvar.level
 @onready var player = get_tree().get_first_node_in_group('player')
 
 func _physics_process(_delta):

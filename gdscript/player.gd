@@ -38,13 +38,13 @@ var hp = 10
 var player_alive = true
 
 func _on_player_hitbox_body_entered(body):
-	if body.has_method('enemy'):
+	if body is enemyy:
 		enemyatk_range = true
 		
 
 
 func _on_player_hitbox_body_exited(body):
-	if body.has_method('enemy'):
+	if body is enemyy:
 		enemyatk_range = false
 		
 func enemy_attacking():

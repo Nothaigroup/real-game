@@ -22,7 +22,7 @@ animations = [{
 radius = 15.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wwjqg"]
-size = Vector2(40, 32)
+size = Vector2(51, 64)
 
 [node name="enemy" type="CharacterBody2D"]
 top_level = true
@@ -38,7 +38,7 @@ shape = SubResource("CircleShape2D_bqudg")
 [node name="enemy_hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_hitbox"]
-position = Vector2(0, -2)
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_wwjqg")
 
 [node name="hp_bar" type="ProgressBar" parent="."]

@@ -99,8 +99,9 @@ _data = {
 "walkUp": SubResource("Animation_021dk")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nuk6n"]
-size = Vector2(33, 76)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4lhmq"]
+radius = 23.5
+height = 96.5
 
 [node name="player" type="CharacterBody2D" groups=["player"]]
 position = Vector2(338, 205)
@@ -139,11 +140,10 @@ clip_children = 2
 y_sort_enabled = true
 clip_contents = true
 layout_direction = 1
-anchors_preset = -1
 offset_left = -27.0
-offset_top = -100.0
+offset_top = -99.0
 offset_right = 27.0
-offset_bottom = -74.0
+offset_bottom = -73.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "Level 1"
 script = ExtResource("2_74go3")
@@ -157,13 +157,13 @@ script = ExtResource("4_yq6s2")
 
 [node name="Marker2D" type="Marker2D" parent="gun"]
 z_as_relative = false
-position = Vector2(30.6938, -6.85715)
+position = Vector2(28, -8)
 
 [node name="player_hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player_hitbox"]
-position = Vector2(0.5, -5)
-shape = SubResource("RectangleShape2D_nuk6n")
+position = Vector2(0.5, -6.25)
+shape = SubResource("CapsuleShape2D_4lhmq")
 
 [node name="hpbar" type="ProgressBar" parent="."]
 modulate = Color(0, 0.686275, 0.541176, 1)
@@ -179,9 +179,6 @@ metadata/_edit_use_anchors_ = true
 
 [node name="atk_cd" type="Timer" parent="."]
 wait_time = 0.5
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = 0
 
 [connection signal="body_entered" from="player_hitbox" to="." method="_on_player_hitbox_body_entered"]
 [connection signal="body_exited" from="player_hitbox" to="." method="_on_player_hitbox_body_exited"]
