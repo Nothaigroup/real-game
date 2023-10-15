@@ -1,3 +1,7 @@
+CanvasLayer
+SubViewport
+Label
+TextEdit
 ProgressBar
 Timer
 CollisionShape2D
@@ -8,7 +12,6 @@ VBoxContainer
 VisibleOnScreenNotifier2D
 AnimatedSprite2D
 Sprite2D
-Label
 Control
 MarginContainer
 Marker2D

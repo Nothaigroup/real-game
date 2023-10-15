@@ -1,10 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://b4d05y72uj263"]
+[gd_scene load_steps=12 format=3 uid="uid://b4d05y72uj263"]
 
 [ext_resource type="Script" path="res://gdscript/player.gd" id="1_rmsn2"]
-[ext_resource type="Script" path="res://level.gd" id="2_74go3"]
 [ext_resource type="Texture2D" uid="uid://3lbwhp1dfm1w" path="res://player/387589420_854933625959966_2668475148856670804_n.png" id="2_708pa"]
 [ext_resource type="Texture2D" uid="uid://bayu72gju36xr" path="res://gun/StG 44.png" id="3_ok2b2"]
-[ext_resource type="Script" path="res://level_bar.gd" id="3_w4jpd"]
 [ext_resource type="Script" path="res://gdscript/gun.gd" id="4_yq6s2"]
 
 [sub_resource type="Animation" id="Animation_hov86"]
@@ -103,7 +101,7 @@ _data = {
 size = Vector2(33, 76)
 
 [node name="player" type="CharacterBody2D" groups=["player"]]
-position = Vector2(338, 205)
+position = Vector2(993, 417)
 script = ExtResource("1_rmsn2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -121,37 +119,8 @@ libraries = {
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_enabled = true
 
-[node name="level_bar" type="ProgressBar" parent="Camera2D"]
-modulate = Color(0.905882, 0.176471, 0.65098, 1)
-clip_contents = true
-offset_left = -34.0
-offset_top = -78.0
-offset_right = 100.0
-offset_bottom = -58.0
-scale = Vector2(0.5, 0.5)
-max_value = 5.0
-show_percentage = false
-script = ExtResource("3_w4jpd")
-metadata/_edit_use_anchors_ = true
-
-[node name="level" type="Label" parent="Camera2D"]
-clip_children = 2
-y_sort_enabled = true
-clip_contents = true
-layout_direction = 1
-anchors_preset = -1
-offset_left = -27.0
-offset_top = -100.0
-offset_right = 27.0
-offset_bottom = -74.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-text = "Level 1"
-script = ExtResource("2_74go3")
-metadata/_edit_use_anchors_ = true
-
 [node name="gun" type="Sprite2D" parent="."]
 top_level = true
-position = Vector2(342, 208)
 texture = ExtResource("3_ok2b2")
 script = ExtResource("4_yq6s2")
 
@@ -175,13 +144,28 @@ offset_bottom = -55.0
 max_value = 10.0
 value = 10.0
 show_percentage = false
-metadata/_edit_use_anchors_ = true
 
 [node name="atk_cd" type="Timer" parent="."]
 wait_time = 0.5
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = 0
+[node name="level_bar" type="ProgressBar" parent="."]
+modulate = Color(0.905882, 0.176471, 0.65098, 1)
+clip_contents = true
+offset_left = -34.0
+offset_top = -78.0
+offset_right = 100.0
+offset_bottom = -58.0
+scale = Vector2(0.5, 0.5)
+max_value = 5.0
+show_percentage = false
+
+[node name="TextEdit" type="TextEdit" parent="."]
+clip_contents = true
+offset_left = -9.0
+offset_top = -111.0
+offset_right = 9.0
+offset_bottom = -81.0
+text = "1"
 
 [connection signal="body_entered" from="player_hitbox" to="." method="_on_player_hitbox_body_entered"]
 [connection signal="body_exited" from="player_hitbox" to="." method="_on_player_hitbox_body_exited"]

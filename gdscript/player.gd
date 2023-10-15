@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var speed = 500
 @onready var animation = $AnimationPlayer
+@onready var levelshow = $Camera2D/level
 
 func handleInput():
 	var direction = Input.get_vector('ui_left','ui_right','ui_up','ui_down')
@@ -24,6 +25,8 @@ func _physics_process(_delta):
 	updateanimation()
 	enemy_attacking()
 	update_hp()
+	update_level()
+	ubdatelevelshow()
 	
 	if hp <= 0:
 		self.queue_free()
@@ -54,8 +57,6 @@ func enemy_attacking():
 func _on_atk_cd_timeout():
 	enemyatk_cooldown = true
 	
-
-
 func update_hp():
 	var health = $hpbar
 	health.value = hp
@@ -64,6 +65,29 @@ func update_hp():
 	else:
 		health.visible = true
 
+@export var expcap = 5
+
+func update_level():
+	var levelbar = $Camera2D/level_bar
+	print("Updating level_bar. expcap:", expcap, "expp:", globalvar.exp)
+
+	levelbar.max_value = expcap
+	levelbar.value = globalvar.exp
+	print("expp:", globalvar.exp,'level:',globalvar.level)
+	if globalvar.exp >= expcap:
+		globalvar.exp=0
+		globalvar.level += 1
+		expcap += 5
+	
+func ubdatelevelshow():
+	levelshow.text = str('level',globalvar.level)
+
+	
+
+
+
 func player():
 	pass
+
+
 

@@ -6,4 +6,12 @@ res://gdscript/enemyspawner.tscn
 res://gdscript/enemy.tscn
 res://player.tscn
 res://gdscript/enemy2.tscn
+res://gdscript/player.gd
+res://gdscript/enemy.gd
+res://gdscript/enemyspawner.gd
+res://global.gd
+res://level_bar.gd
+res://level.gd
 res://gdscript/bulllet.gd
+res://gdscript/gun.gd
+res://spawn_info.gd
