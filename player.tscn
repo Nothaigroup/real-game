@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b4d05y72uj263"]
+[gd_scene load_steps=15 format=3 uid="uid://b4d05y72uj263"]
 
 [ext_resource type="Script" path="res://gdscript/player.gd" id="1_rmsn2"]
 [ext_resource type="Script" path="res://level.gd" id="2_74go3"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bayu72gju36xr" path="res://gun/StG 44.png" id="3_ok2b2"]
 [ext_resource type="Script" path="res://level_bar.gd" id="3_w4jpd"]
 [ext_resource type="Script" path="res://gdscript/gun.gd" id="4_yq6s2"]
+[ext_resource type="AudioStream" uid="uid://ds4jfmlty2qqq" path="res://sound/AK-47 Single Shot 01 - QuickSounds.com.mp3" id="7_6iy0e"]
 
 [sub_resource type="Animation" id="Animation_hov86"]
 length = 0.001
@@ -158,6 +159,10 @@ script = ExtResource("4_yq6s2")
 [node name="Marker2D" type="Marker2D" parent="gun"]
 z_as_relative = false
 position = Vector2(28, -8)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="gun"]
+stream = ExtResource("7_6iy0e")
+max_polyphony = 10
 
 [node name="player_hitbox" type="Area2D" parent="."]
 

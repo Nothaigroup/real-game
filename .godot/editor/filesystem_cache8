@@ -1,18 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697384390
+::res://::1697401796
 global.gd::GDScript::-1::1697358028::0::1::::<>Node<>::
 hum.tscn::PackedScene::6106126248951321125::1697293748::0::1::::<><>::
 level.gd::GDScript::-1::1697380543::0::1::::<>Label<>::
 level_bar.gd::GDScript::-1::1697358839::0::1::::<>ProgressBar<>::
 main_menu.gd::GDScript::-1::1697275037::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::7281320251602400620::1697383630::0::1::::<><>::res://main_menu.gd
+main_menu.tscn::PackedScene::7281320251602400620::1697401794::0::1::::<><>::res://main_menu.gd
 new_script.gd::GDScript::-1::1697222479::0::1::::<>RefCounted<>::
-Options.tscn::PackedScene::4430703215181226011::1697383632::0::1::::<><>::uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png
+Options.tscn::PackedScene::4430703215181226011::1697401796::0::1::::<><>::uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png
 PauseMenu.gd::GDScript::-1::1697222479::0::1::::<>Node2D<>::
-player.tscn::PackedScene::4429663092342541966::1697383632::0::1::::<><>::res://gdscript/player.gd<>res://level.gd<>uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png<>uid://bayu72gju36xr::::res://gun/StG 44.png<>res://level_bar.gd<>res://gdscript/gun.gd
+player.tscn::PackedScene::4429663092342541966::1697401796::0::1::::<><>::res://gdscript/player.gd<>res://level.gd<>uid://3lbwhp1dfm1w::::res://player/387589420_854933625959966_2668475148856670804_n.png<>uid://bayu72gju36xr::::res://gun/StG 44.png<>res://level_bar.gd<>res://gdscript/gun.gd<>uid://dbkcnhfq4ak6f::::res://sound/ak-47-firing-8760.mp3
 spawn_info.gd::GDScript::-1::1697383233::0::1::::Spawn_info<>Resource<>::
 world.gd::GDScript::-1::1697222479::0::1::::<>Node2D<>::
-world.tscn::PackedScene::7623876761369753267::1697383632::0::1::::<><>::uid://b4d05y72uj263::::res://player.tscn<>uid://ctu3ya5aq82n8::::res://sch/sch_inside.png<>uid://bw1n1sravd3jw::::res://sch/sch_wall.png<>uid://bdihcgl6lupnv::::res://sch/sch_D.png<>uid://bl0sm65bnmi5r::::res://sch/sch_A5.png<>uid://syopmrhye317::::res://gdscript/enemy.tscn<>uid://coqobedpio2dh::::res://gdscript/enemyspawner.tscn
+world.tscn::PackedScene::7623876761369753267::1697401796::0::1::::<><>::uid://b4d05y72uj263::::res://player.tscn<>uid://ctu3ya5aq82n8::::res://sch/sch_inside.png<>uid://bw1n1sravd3jw::::res://sch/sch_wall.png<>uid://bdihcgl6lupnv::::res://sch/sch_D.png<>uid://bl0sm65bnmi5r::::res://sch/sch_A5.png<>uid://syopmrhye317::::res://gdscript/enemy.tscn<>uid://coqobedpio2dh::::res://gdscript/enemyspawner.tscn
 ::res://bullet/::1697212862
 All_Fire_Bullet_Pixel_16x16_00.png::CompressedTexture2D::6124529682441861998::1697212862::1697212862::1::::<><>::
 All_Fire_Bullet_Pixel_16x16_01.png::CompressedTexture2D::8083140385709473270::1697212862::1697212862::1::::<><>::
@@ -23,16 +23,16 @@ All_Fire_Bullet_Pixel_16x16_05.png::CompressedTexture2D::4917073634316678745::16
 All_Fire_Bullet_Pixel_16x16_06.png::CompressedTexture2D::6663972644723371281::1697212862::1697212862::1::::<><>::
 All_Fire_Bullet_Pixel_16x16_07.png::CompressedTexture2D::7443064691919575992::1697212862::1697212862::1::::<><>::
 KoCuxN.png::CompressedTexture2D::7603736435750128537::1697212453::1697212852::1::::<><>::
-::res://gdscript/::1697383632
-bullet.tscn::PackedScene::7296696766614781536::1697383632::0::1::::<><>::res://gdscript/bulllet.gd<>uid://cti1dycxi5xfy::::res://bullet/All_Fire_Bullet_Pixel_16x16_00.png
+::res://gdscript/::1697401796
+bullet.tscn::PackedScene::7296696766614781536::1697401796::0::1::::<><>::res://gdscript/bulllet.gd<>uid://cti1dycxi5xfy::::res://bullet/All_Fire_Bullet_Pixel_16x16_00.png
 bulllet.gd::GDScript::-1::1697382920::0::1::::bullet<>Area2D<>::
-enemy2.tscn::PackedScene::7578875288797358121::1697383632::0::1::::<><>::res://gdscript/enemy.gd<>uid://b6knbj0vgjdgh::::res://Ghost and Skull sprites/ghostSpritesheetfull.png
-enemy.gd::GDScript::-1::1697382462::0::1::::enemyy<>CharacterBody2D<>::
-enemy.tscn::PackedScene::1313821733281508804::1697383632::0::1::::<><>::uid://das7qxtxqtkye::::res://Ghost and Skull sprites/skullSpritesheet.png<>res://gdscript/enemy.gd
+enemy2.tscn::PackedScene::7578875288797358121::1697401796::0::1::::<><>::res://gdscript/enemy.gd<>uid://b6knbj0vgjdgh::::res://Ghost and Skull sprites/ghostSpritesheetfull.png
+enemy.gd::GDScript::-1::1697385742::0::1::::enemyy<>CharacterBody2D<>::
+enemy.tscn::PackedScene::1313821733281508804::1697401796::0::1::::<><>::uid://das7qxtxqtkye::::res://Ghost and Skull sprites/skullSpritesheet.png<>res://gdscript/enemy.gd
 enemyspawner.gd::GDScript::-1::1697355010::0::1::::<>Node2D<>::
-enemyspawner.tscn::PackedScene::5789367261496864745::1697383632::0::1::::<><>::res://gdscript/enemyspawner.gd<>uid://syopmrhye317::::res://gdscript/enemy.tscn<>res://spawn_info.gd<>uid://df8i763sapxen::::res://gdscript/enemy2.tscn
-gun.gd::GDScript::-1::1697383045::0::1::::<>Sprite2D<>::
-player.gd::GDScript::-1::1697381413::0::1::::<>CharacterBody2D<>::
+enemyspawner.tscn::PackedScene::5789367261496864745::1697401796::0::1::::<><>::res://gdscript/enemyspawner.gd<>uid://syopmrhye317::::res://gdscript/enemy.tscn<>res://spawn_info.gd<>uid://df8i763sapxen::::res://gdscript/enemy2.tscn
+gun.gd::GDScript::-1::1697401780::0::1::::<>Sprite2D<>::
+player.gd::GDScript::-1::1697401527::0::1::::<>CharacterBody2D<>::
 ::res://Ghost and Skull sprites/::1697187986
 ghostSpritesheetfull.png::CompressedTexture2D::4583710233005352679::1697187979::1697187986::1::::<><>::
 ReadMe.txt::TextFile::-1::1697187979::0::1::::<><>::
@@ -72,3 +72,6 @@ sch_D.png::CompressedTexture2D::2613931160733802619::1697134690::1697134690::1::
 sch_inside.png::CompressedTexture2D::6149459932808033999::1697134690::1697134690::1::::<><>::
 sch_wall.png::CompressedTexture2D::3985085788593050336::1697134690::1697134690::1::::<><>::
 Terms.txt::TextFile::-1::1697134690::0::1::::<><>::
+::res://sound/::1697402039
+AK-47 Single Shot 01 - QuickSounds.com.mp3::AudioStreamMP3::8483084221505517928::1697402039::1697402039::1::::<><>::
+ak-47-firing-8760.mp3::AudioStreamMP3::7250239697717436123::1697399105::1697399207::1::::<><>::

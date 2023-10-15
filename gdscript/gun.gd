@@ -2,6 +2,7 @@ extends Sprite2D
 
 var can_fire = true
 var bullet = preload('res://gdscript/bullet.tscn')
+@onready var rara = $AudioStreamPlayer
 
 func _ready(): set_as_top_level(true)
 
@@ -12,6 +13,7 @@ func _physics_process(_delta):
 	look_at(mousepo)
 
 	if Input.is_action_pressed("fire") and can_fire:
+		rara.play()
 		var bulletinstance = bullet.instantiate()
 		bulletinstance.rotation = rotation
 		bulletinstance.global_position = $Marker2D.global_position

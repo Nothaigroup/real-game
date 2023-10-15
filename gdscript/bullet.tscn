@@ -47,12 +47,14 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qs1lr"]
-size = Vector2(8, 5)
+size = Vector2(26, 7)
 
 [node name="bullet" type="Area2D"]
 script = ExtResource("1_82asa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3.8147e-06, 2.38419e-07)
+scale = Vector2(2.96875, 1.3125)
 sprite_frames = SubResource("SpriteFrames_2an5d")
 frame_progress = 0.579165
 
@@ -61,8 +63,8 @@ position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_qs1lr")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(4.76837e-07, 0.5)
-scale = Vector2(0.4, 0.25)
+position = Vector2(0, 0.5)
+scale = Vector2(1.3, 0.35)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

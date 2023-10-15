@@ -6848,6 +6848,7 @@ metadata/_edit_horizontal_guides_ = [438.0]
 metadata/_edit_vertical_guides_ = [119.0]
 
 [node name="player" parent="." instance=ExtResource("1_i56pg")]
+position = Vector2(970, 403)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(465, 2)

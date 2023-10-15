@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ds4jfmlty2qqq"
+path="res://.godot/imported/AK-47 Single Shot 01 - QuickSounds.com.mp3-975fd14e565de1d146a7e13658620fff.mp3str"
+
+[deps]
+
+source_file="res://sound/AK-47 Single Shot 01 - QuickSounds.com.mp3"
+dest_files=["res://.godot/imported/AK-47 Single Shot 01 - QuickSounds.com.mp3-975fd14e565de1d146a7e13658620fff.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
