@@ -158,10 +158,11 @@ script = ExtResource("4_yq6s2")
 
 [node name="Marker2D" type="Marker2D" parent="gun"]
 z_as_relative = false
-position = Vector2(28, -8)
+position = Vector2(30, -7)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="gun"]
 stream = ExtResource("7_6iy0e")
+volume_db = -9.57
 max_polyphony = 10
 
 [node name="player_hitbox" type="Area2D" parent="."]

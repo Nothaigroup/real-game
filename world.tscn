@@ -1,10 +1,12 @@
-[gd_scene load_steps=14 format=3 uid="uid://dgvcevw713qox"]
+[gd_scene load_steps=16 format=3 uid="uid://dgvcevw713qox"]
 
 [ext_resource type="PackedScene" uid="uid://b4d05y72uj263" path="res://player.tscn" id="1_i56pg"]
+[ext_resource type="Script" path="res://world.gd" id="1_tdmrp"]
 [ext_resource type="Texture2D" uid="uid://ctu3ya5aq82n8" path="res://sch/sch_inside.png" id="3_dynwp"]
 [ext_resource type="Texture2D" uid="uid://bw1n1sravd3jw" path="res://sch/sch_wall.png" id="4_yy3fl"]
 [ext_resource type="Texture2D" uid="uid://bdihcgl6lupnv" path="res://sch/sch_D.png" id="5_ceh5m"]
 [ext_resource type="Texture2D" uid="uid://bl0sm65bnmi5r" path="res://sch/sch_A5.png" id="6_rkpi8"]
+[ext_resource type="AudioStream" uid="uid://bqdblroo25dv8" path="res://sound/soundmunmun.mp3" id="8_71sus"]
 [ext_resource type="PackedScene" uid="uid://syopmrhye317" path="res://gdscript/enemy.tscn" id="10_268p2"]
 [ext_resource type="PackedScene" uid="uid://coqobedpio2dh" path="res://gdscript/enemyspawner.tscn" id="10_pvd21"]
 
@@ -6844,6 +6846,7 @@ pattern_0 = SubResource("TileMapPattern_taslf")
 process_mode = 3
 y_sort_enabled = true
 position = Vector2(-26, 65)
+script = ExtResource("1_tdmrp")
 metadata/_edit_horizontal_guides_ = [438.0]
 metadata/_edit_vertical_guides_ = [119.0]
 
@@ -6907,3 +6910,9 @@ position = Vector2(63.0608, 0.194366)
 
 [node name="enemy" parent="." instance=ExtResource("10_268p2")]
 position = Vector2(135, 137)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_71sus")
+volume_db = 5.104
+autoplay = true
+max_distance = 99999.0

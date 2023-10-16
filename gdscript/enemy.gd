@@ -1,12 +1,15 @@
 extends CharacterBody2D
 class_name enemyy
+@onready var audioo = $deadsound
+signal dead
 
 @export var movement_speed  = 200.0
 var alivee  = true
 var cantakedmg = true
 var weaponname = ''
 var weapondmg = 0
-var hp = globalvar.hpp+globalvar.level
+var hp = globalvar.hpp*globalvar.level
+var hpcap = globalvar.hpp*globalvar.level
 @onready var player = get_tree().get_first_node_in_group('player')
 
 func _physics_process(_delta):
@@ -22,7 +25,8 @@ func damage():
 			if hp <= 0:
 				alivee = false
 				if not alivee:
-					globalvar.exp += 1
+					emit_signal('dead')
+					globalvar.expp += 1
 					queue_free()
 					
 		elif hp > 0:
@@ -32,8 +36,9 @@ func damage():
 func update_hpbar():
 	var hpbar = $hp_bar
 	hpbar.value = hp
+	hpbar.max_value = hpcap
 	
-	if hp >= 5:
+	if hp >= hpcap:
 		hpbar.visible = false
 	else:
 		hpbar.visible = true

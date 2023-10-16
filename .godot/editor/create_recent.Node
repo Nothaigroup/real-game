@@ -1,4 +1,6 @@
 AudioStreamPlayer
+AudioStreamPlayer2D
+AudioStreamPlayer3D
 CanvasLayer
 SubViewport
 Label

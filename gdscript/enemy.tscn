@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://syopmrhye317"]
+[gd_scene load_steps=15 format=3 uid="uid://syopmrhye317"]
 
 [ext_resource type="Texture2D" uid="uid://das7qxtxqtkye" path="res://Ghost and Skull sprites/skullSpritesheet.png" id="1_ggbro"]
 [ext_resource type="Script" path="res://gdscript/enemy.gd" id="1_v2jv5"]
+[ext_resource type="AudioStream" uid="uid://cgubodkt4t6ss" path="res://sound/mixkit-creature-long-screech-307.wav" id="3_8go6f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d7kpc"]
 atlas = ExtResource("1_ggbro")
@@ -98,7 +99,11 @@ offset_top = 25.0
 offset_right = 21.0
 offset_bottom = 33.0
 max_value = 5.0
-value = 5.0
 show_percentage = false
+
+[node name="deadsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_8go6f")
+volume_db = 5.104
+max_polyphony = 10
 
 [connection signal="area_entered" from="enemy_hitbox" to="." method="_on_enemy_hitbox_area_entered"]

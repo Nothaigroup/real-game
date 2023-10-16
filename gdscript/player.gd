@@ -69,13 +69,13 @@ func update_hp():
 
 func update_level():
 	var levelbar = $Camera2D/level_bar
-	print("Updating level_bar. expcap:", expcap, "expp:", globalvar.exp)
+	print("Updating level_bar. expcap:", expcap, "expp:", globalvar.expp)
 
 	levelbar.max_value = expcap
-	levelbar.value = globalvar.exp
-	print("expp:", globalvar.exp,'level:',globalvar.level)
-	if globalvar.exp >= expcap:
-		globalvar.exp=0
+	levelbar.value = globalvar.expp
+	print("expp:", globalvar.expp,'level:',globalvar.level)
+	if globalvar.expp >= expcap:
+		globalvar.expp=0
 		globalvar.level += 1
 		expcap += 5
 	
